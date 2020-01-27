@@ -33,7 +33,7 @@ For each is a built in loop for every array. Map is used when we want to change 
 
 2.What is the difference between a function and a method? 
 
-3.What is closure? When you want to make variables private
+3.What is closure? When you want to make variables private(local)
 
 4.Describe the four rules of the 'this' keyword.
 -New keyword constructs a new object.
