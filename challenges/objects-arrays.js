@@ -77,8 +77,7 @@ console.log(contactInfo);
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
 const unisWithUni = [];
 graduates.forEach(graduates => {
-  unisWithUni.push(`${graduates.university['Uni']}`);
-
+  unisWithUni.push(Uni);
 })
 
 console.log(unisWithUni);;
@@ -119,15 +118,13 @@ The zoos need a list of all their animal's names (animal_name only) converted to
 
 */
 
-const lowCaseAnimalNames = [];
-zooAnimals.forEach(zooAnimals => {
+const lowCaseAnimalNames = []
+zooAnimals.map(zooAnimals => {
   lowCaseAnimalNames.push(zooAnimals.animal_name)
-  return lowCaseAnimalNames.map(function (zooAnimals) {
-    return zooAnimals.object.animal_name.toLowercase()
-  })
 })
-
+lowCaseAnimalNames.toLowerCase()
 console.log(lowCaseAnimalNames);
+
 
 /* Request 3: .filter() 
 
@@ -135,9 +132,9 @@ The zoos are concerned about animals with a lower population count. Using filter
 
 */
 const lowPopulationAnimals = [];
-const lowpop = zooAnimals.filter( number => {
-  lowpop.push(zooAnimals.population < 5);
-})
+const lowPopulationAnimals = zooAnimals.filter(animal => zooAnimals.population < 5);
+
+
 console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
@@ -146,7 +143,7 @@ The zoos need to know their total animal population across the United States. Fi
 
 */
 const populationTotal = 0;
-zooAnimals.reduce(index, callback)
+zooAnimals.reduce(index, x)
 
 console.log(populationTotal);
 
